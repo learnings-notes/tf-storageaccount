@@ -13,6 +13,6 @@ variable "location" {
 
 variable "sa_name" {
   type    = string
-  default = "testingazurenetworksetting"
+  default = "testingazurenwsetting"
 }
 
