@@ -9,3 +9,12 @@ terraform {
     key                  = "terraformtemplateDev.tfstate"
   }
 }
+
+
+module "sa" {
+  source         = "../../modules/storageaccount"
+  sa_name        = var.sa_name
+  location       = azurerm_resource_group.rg.location
+  resource_group = azurerm_resource_group.rg.name
+
+}
