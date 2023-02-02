@@ -8,6 +8,5 @@ variable "location" {
 }
 variable "sa_name" {
   type    = list(string)
-  default = "testingazurenwsetting"
+  default = ["testingazurenwsetting", "testingazurenwsettin2"]
 }
-
