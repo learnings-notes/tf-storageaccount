@@ -1,5 +1,5 @@
 resource "azurerm_storage_account" "sa" {
-  for_each = var.sa_name
+  for_each = toset(var.sa_name)
 
   name                     = each.value
   resource_group_name      = var.resource_group
