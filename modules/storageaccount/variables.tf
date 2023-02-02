@@ -7,6 +7,7 @@ variable "location" {
   default = "eastus"
 }
 variable "sa_name" {
-  type    = string
+  type    = list(string)
   default = "testingazurenwsetting"
 }
+

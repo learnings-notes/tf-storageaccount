@@ -1,5 +1,7 @@
 resource "azurerm_storage_account" "sa" {
-  name                     = var.sa_name
+  for_each = var.sa_name
+
+  name                     = each.value
   resource_group_name      = var.resource_group
   location                 = var.location
   account_tier             = "Standard"
