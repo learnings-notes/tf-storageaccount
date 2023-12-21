@@ -18,3 +18,4 @@ module "sa" {
   resource_group = azurerm_resource_group.rg.name
 
 }
+
